@@ -1,0 +1,23 @@
+.dashbord{
+    width:100%;
+    height:100%;
+    display:flex;
+}
+.dashbord_ticker_widget{
+    width:40%;
+    background-color: #f6f7f9;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    border-width: 0 0 1px;
+    border-right: 1px solid #e0e0e0;
+}
+.dashbord_orderbook{
+    width:60%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    background: rgb(246,247,249);
+    background: linear-gradient(0deg, rgba(246,247,249,1) 50%, rgba(26,115,232,1) 50%);
+}
