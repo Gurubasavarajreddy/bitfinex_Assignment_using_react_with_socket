@@ -14,57 +14,54 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### requirement document link
+https://docs.google.com/document/d/11T_5xFi1N_7vzKgldaYVi5fMpx8LPVRK8AAJwqIw8I0/edit
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#####below
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Mobile /Web Developer Task
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Overview
+Create an application that replicates the Order Book, Ticker widgets functionality from the Trading page of the Bitfinex website/mobile app.
+https://www.bitfinex.com/trading
 
-### `npm run eject`
+Ticker
+The ticker is a small widget that shows the current trade pair, 24 hours volume, 24 hours price change in percents, and last price for that pair.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Order Book
+Similarly to the book from the mobile, the created Order Book should have the ability to change precision of the price column, and to change scaling of the depth bars. Price alerts management and layout configuration features are not required.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+General Requirements
+All of the widgets should conceptually be the same as the corresponding widgets on the Bitfinex mobile app or the website. They should show the data in real-time and should have the ability to recover after a lost network connection. Add some controls to manage the WebSocket connection such as the “Connect” and “Disconnect” buttons.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+Technological Requirements
+Use React for rendering and Redux to store the market data. Feel free to create a custom style for the widgets, it can be very simple. 
+Use Bitfinex WebSocket V2 API to obtain the data.
+https://docs.bitfinex.com/v2/docs
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Suggestions
+For React :
+	You can start with any react-redux boilerplate or CRA.
 
-### Making a Progressive Web App
+For Native: 
+Use this `expo init`(expo-cli) command and choose the minimal template to bootstrap your application quickly (no need to eject). It also makes the evaluation easier.
+https://www.npmjs.com/package/expo-cli
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+Note:
+You can submit code with any online editor or Github
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+I.e, Codepen, jsfiddle, snack, codesandbox
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
